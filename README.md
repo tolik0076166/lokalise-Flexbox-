@@ -1,1 +1,1 @@
-# lokalise-Flexbox-
+# Layout of the first three block sites according to the layout with Figma (https:/ /www.figma.com/file/8oDGBdw8OIB8MqYOExjMw0/Lokalise) using flexbox and sass.

@@ -1,0 +1,242 @@
+@import "color.scss";
+@import "font.scss";
+
+
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: "GraphikLCG-Regular";
+  background-color: $background-color-body;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+
+  .header {
+    width: 100%;
+    background: $background-color-header;
+    border-radius: 0;
+    border-bottom: 1px solid $border-bottom-color;
+    height: 95px;
+
+    .wrapper {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 51px;
+
+        .logo {
+          margin-right: 51px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .navigation {
+          ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+              list-style: none;
+
+              &:last-child > a {
+                margin-right: 0;
+              }
+
+              a {
+                text-decoration: none;
+                margin-right: 57px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: $text-color;
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        margin-right: 51px;
+
+        button {
+          height: 45px;
+          width: 120px;
+          font-family: "GraphikLCG-Semibold";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 45px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .transparent {
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          border-radius: 0;
+          margin-right: 10px;
+          background: $background-color-transparent;
+        }
+
+        .filled {
+          background: $background-color-filled;
+          border-radius: 0;
+          border: none;
+          color: $text-color-filled
+        }
+      }
+    }
+  }
+
+  .main {
+    min-height: calc(100vh - 95px - 455px);
+    height: 100%;
+
+    .wrapper {
+      margin: 97px auto;
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 75px;
+
+        .title {
+          max-width: 552px;
+          width: 100%;
+          margin-bottom: 51px;
+          font-style: normal;
+          font-family: "GraphikLCG-Semibold";
+          font-weight: 600;
+          font-size: 65px;
+          line-height: 70px;
+          color: $text-color;
+        }
+
+        .description {
+          max-width: 471px;
+          width: 100%;
+          margin-bottom: 51px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 35px;
+          color: $text-color;
+        }
+
+        .buttons {
+          margin-bottom: 25px;
+
+          button {
+            width: 160px;
+            height: 60px;
+            font-style: normal;
+            font-family: "GraphikLCG-Semibold";
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 60px;
+            text-align: center;
+
+            &:hover {
+                cursor: pointer;
+              }
+          }
+
+          .transparent {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 0;
+            background: $background-color-transparent;
+          }
+
+          .filled {
+            background: $background-color-filled;
+            border-radius: 0;
+            border: none;
+            color: $text-color-filled;
+            margin-right: 10px;
+          }
+        }
+
+        .annotation {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          color: $text-color;
+        }
+      }
+
+      .promo {
+        max-width: 759px;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    background: $background-color-footer;
+    height: 455px;
+
+    .wrapper {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 108px;
+      display: flex;
+      flex-direction: column;
+
+      .title-footer {
+        font-family: "GraphikLCG-Semibold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: $text-color;
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .icons {
+        margin: 70px 75px 104px 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
